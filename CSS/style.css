@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'ABeeZee', sans-serif;
+    background-color: black;
+}
+
+
+.vverx{
+    width: 100%;
+    height: 50vh;
+}
+
+
+.nav_back{
+    background-color: rgba(236, 51, 106, 0.9);
+    height: 75px;
+    transition: 0.4s;
+    margin-bottom: 10%;
+}
+
+.nav_center{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.nav_inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_inline ul{
+    padding-left: 0;
+    list-style: none;
+    color: white;
+}
+
+.list{
+    margin-top: 10px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.list li:nth-child(5) button{
+    background-color: #ec345f;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.list li:nth-child(5) button:hover{
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 0 0 10px #1b1b1b;
+}
+
+.list li{
+    transition: 0.3s;
+    cursor: pointer;
+}
+ 
+.list li:hover{
+    color: black;
+}   
+
+.toggli{
+    margin-top: 14px;
+    display: none;
+}
+
+
+
+.logo li img{
+    width: 26%;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Trebuchet MS;
+}
+
+
+.myCard{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 30%;
+    min-height: 100px;
+    background-color: #1b1b1b;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: .4s;    
+    margin-bottom: 5%;
+}
+
+.block img{
+    margin-top: -15%;
+    width: 117%;
+    box-shadow: 0 0 20px #e9204f;
+    transition: .4s;
+}
+
+.mainText{
+    margin: 30px 0 10px 0;
+    font-size: 20px;
+    color: white;
+}
+
+
+.lineBlock{
+    height: 0;
+    width: 25%;
+    border-top: 2px solid #e9204f;
+    transition: .4s;
+    margin-bottom: 4px;
+}
+
+.block p{
+    color: white;
+    font-size: 14px;
+}
+
+.block:hover{
+    background-color: #e9204f;
+    box-shadow: 0 0 10px #ec345f;
+}
+
+.block:hover .lineBlock{
+    border-color: black;
+}
+
+.block:hover img{
+    box-shadow: 0 0 20px black;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.inputs input{
+    padding: 0 10px;
+    padding-right: 40px;
+    background: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #e9204f; 
+    color: #fff;
+}
+
+.tools{
+    margin: 0 3px;
+    cursor: pointer;
+    color: #e9204f;
+    transition: .4s;
+}
+
+.block:hover .tools{
+    color: black;
+}
+
+
+
+
+@media (max-width:800px) {
+    .toggli{
+        display: block;
+    }
+
+
+    .nav_back.activeBack{
+        height: 280px;
+    }
+
+    .nav_back.activeBack .list{
+        display: flex;
+    }
+
+    .list{
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        width: 90%;
+        display: none;
+    }
+
+
+    .list li{
+        margin: 10px 0;
+        border-bottom: 1px solid white;
+    }
+
+    
+}
+
+@media (max-width:491px){
+    .logo li img{
+        width: 35%;
+    }
+}

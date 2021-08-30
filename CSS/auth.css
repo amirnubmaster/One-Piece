@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'ABeeZee', sans-serif;
+    background-color: black;
+}
+
+
+.formCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card{
+    border: 0;
+    text-align: center;
+    width: 330px;
+    height: 300px;
+    border-radius: 5%;
+    background: #ec345f;
+    box-shadow: 0 0 20px #ec345f,
+    0 0 40px #ec345f;
+    position: relative;
+}
+
+.card1{
+    border: 0;
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    border-radius: 5%;
+    background: #1b1b1b;
+    position: absolute;
+    top: 17%;
+    right: 30%;
+    box-shadow: 0 0 10px #292929;
+}
+
+
+.content{
+    padding: 10px 50px;
+}
+
+.form{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+.form input{
+    padding: 10px 5px;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    background: 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.form button{
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #b82245;
+    color: white;
+}
